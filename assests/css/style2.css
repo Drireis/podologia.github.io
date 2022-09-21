@@ -1,0 +1,279 @@
+/*impotando fontes do googlefonts*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Dancing+Script&display=swap');
+/* configurações gerais*/
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Bad Script', cursive;
+    
+}
+/* congifurações do body*/    
+body {
+    background: linear-gradient(90deg, white, rgb(216, 200, 216));
+}
+/* altura do html em 100%*/     
+html, body  {
+    height: 100%;
+}
+/* menu nav-bar */
+header {
+    height: 120px;
+    background: linear-gradient(90deg, plum, rgb(77, 55, 77));
+    box-shadow: 8px 8px 12px #191a1a ;
+    margin-top: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}    
+/* alinhando itens do menu */
+header .conteiner {
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    font-size: 3rem;
+}
+/* Configurando botões do menu */
+#btnmenu {
+    cursor: pointer;
+    margin: 5px;
+    background: none;
+    border: none;
+    font-size: 2.0rem;
+    color: aliceblue;
+    text-shadow: 3px 3px 2px #191a1a;
+    height: 50px;
+    width: 100px;
+    font-family: 'Dancing Script', cursive;
+    transition-property: all;
+    transition-duration: .5s;
+}
+/* Efeitos dos botões de menu */
+#btnmenu:hover {
+    background-color: rgb(77, 55, 77);
+    transform: scale(110%);
+    border-radius: 10px;
+    transition-property: all;
+    transition-duration: .5s;
+}
+/* Configurando Logo */
+
+.logo a {
+    margin-top: 10px;
+    display: flex;
+    text-decoration: none;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(31, 13, 31);
+    font-size: 4rem;
+    text-shadow: 5px 5px 2px #03030396;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: .5s;
+}
+/* Efeitos da logo */
+.logo a:hover {
+    text-shadow: none;
+    color:rgb(214, 187, 214) ;
+    font: linear-gradient(90deg, plum, rgb(77, 55, 77));
+    transition-property: all;
+    transition-duration: .5s;
+}
+/* responsividade do redimensionamento de tela */
+@media(max-width: 1000px){
+    html{
+        font-size: 70%;
+    }
+}
+@media(max-width: 700px){
+    html {
+        font-size: 60%;
+    }
+}
+@media(max-width: 550px){
+    html {
+        font-size: 50%;
+    }
+}
+/* cabeçalho */
+.cabeçalho h1{
+    font-family: 'Bad Script', cursive;
+    height: 200px;
+    margin-top: 120px;
+    font-size: 4rem;
+    text-align: center;        
+}
+/* composição slideshow, botões, transições e */
+.conteiner1 {
+    margin-top: 35px;
+    margin-left: 45%;
+    display: flex;
+    align-items: center;
+}
+.content {
+    height: 600px;
+    width: 1100px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 820px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 8px 8px 12px #0d0e0ec4 ;
+}
+/* botões de navegação do sliedeshow */
+.navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    text-align: center;
+}
+.bar {
+    align-items: center;
+    width: 60px;
+    height: 15px;
+    margin: 2px;
+    cursor: pointer;
+    border: 2px solid plum;
+    border-radius: 5px;
+}
+.bar:hover {
+    background-color: plum;
+    transition: 0.5s;
+}
+input {
+    display: none;
+}
+/* transições das imagens */
+.slides {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    
+}
+.slide {
+    width: 25%;
+    transition: 0.5s;
+
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+#slide2:checked ~ .s1 {
+    margin-left: -25%;
+}
+#slide3:checked ~ .s1{
+    margin-left: -50%;
+}
+#slide4:checked ~ .s1 {
+    margin-left: -75%;
+}
+/* texto reflexologia*/
+.serviços {
+    height: 700px;
+    width: 100%;
+    margin-top: 750px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+pre{
+    text-align: left;
+    font-family: 'Bad Script', cursive;
+    margin-left: 20%;
+    margin-right: 10%;
+}
+/* baner massagem */
+.conteiner2 {
+    margin: 50px;
+}
+.conteiner2 img {
+    height: 600px;
+    width: 100%;
+}
+
+/* RODAPÉ */
+
+footer {
+    margin-top: 50px;
+    background-color: #191a1a;
+    padding: 30px 0;
+    height: 200px;
+   
+}
+.conteiner-footer {
+    max-width: 100%;
+    padding: 0 4%;
+    margin: auto;
+}
+.row-footer {
+    display: flex;
+    
+    
+}
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 600;
+    position: relative;
+    text-transform: uppercase;
+}
+.footer-col ul {
+    list-style: none;
+}
+.footer-col ul li {
+    margin: 10px 0;
+}
+.footer-col ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: capitalize;
+    font-weight: 300;
+    display: block;
+    transition:  all 0.5s ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.footer-col ul li a:hover {
+    color:rgb(77, 55, 77);
+    padding: 10px;
+}
+#midias-sociais a{
+    color: azure;
+    text-decoration: none;
+    margin: 0 20px 2px 0;
+    transition: all 0.5s ease;
+}
+#midias-sociais a:hover{
+    color: rgb(77, 55, 77);
+    padding: 10px;
+}
+.devs a pre {
+    transition: all 0.5s ease;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 240, 245);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.devs a {
+    text-decoration: none;
+    
+} 
+.devs a pre:hover {
+    color: aqua;
+    padding-top: 10px;
+}
